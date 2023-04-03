@@ -1,13 +1,13 @@
-package com.kukui.KUKUIMID;
+package com.kukui;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KukuiMidApplication {
+public class BackKukuiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(KukuiMidApplication.class, args);
+		SpringApplication.run(BackKukuiApplication.class, args);
 	}
 
 }
