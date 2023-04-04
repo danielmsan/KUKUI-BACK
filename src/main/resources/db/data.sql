@@ -1,4 +1,4 @@
- INSERT INTO Producto (nombre, categoria, descripcion, precio, src_imagen, tamanio) 
+ INSERT INTO Producto (nombre, categoria, descripcion, precio, src_imagen, tamanio) VALUES
 
 	('Shampoo de coco 80 gr', 'Shampoo sólido', 'El shampoo de coco sólido está diseñado para cabello normal o mixto y es elaborado con aceite de coco, aceite de oliva y vitamina E. Estos ingredientes proporcionan una limpieza suave pero efectiva al cabello, al mismo tiempo que lo hidratan y lo protegen.', 120, 'CocoTiendaBC.jpg', '80 gr'),
     ('Shampoo de carbón activado 80gr', 'Shampoo sólido', 'El shampoo sólido de carbón activado con aceite de ricino, aceite de coco, carbón activado y romero es una fórmula innovadora que combina los beneficios de varios ingredientes naturales para proporcionar una limpieza profunda y efectiva al cabello normal o mixto.', 120, 'CarbonTiendaBC.jpg', '80 gr'),

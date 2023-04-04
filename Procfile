@@ -1,1 +1,1 @@
-web: java -jar -Dserver.port=$PORT build/libs/kukui-0.0.1-SNAPSHOT.jar
+web: java -jar -Dserver.port=$PORT bin/main/kukui-0.0.1-SNAPSHOT.jar
