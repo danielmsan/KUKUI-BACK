@@ -1,5 +1,5 @@
 package com.kukui.controllers;
 
-public class ProductoController {
+public class UsuarioController {
 
 }

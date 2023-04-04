@@ -1,5 +1,5 @@
 package com.kukui.models;
 
-public class Producto {
+public class Pedido {
 
 }

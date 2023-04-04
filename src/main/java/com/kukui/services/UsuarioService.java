@@ -1,5 +1,5 @@
 package com.kukui.services;
 
-public class ProductoService {
+public class UsuarioService {
 
 }
