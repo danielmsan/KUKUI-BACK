@@ -20,11 +20,6 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-bootJar {
-    archiveName = 'kukui.jar'
-    mainClassName = 'com.kukui.BackKukuiApplication'
-}
-
 
 tasks.named('test') {
 	useJUnitPlatform()
