@@ -102,8 +102,13 @@ public class Usuario {
 	public Direccion getDireccion() {
 		return direccion;
 	}
+	
 
 
+
+	public void setDireccion(Direccion direccion) {
+		this.direccion = direccion;
+	}
 
 	public String getEmail() {
 		return email;

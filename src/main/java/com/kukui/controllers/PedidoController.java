@@ -6,11 +6,13 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import com.kukui.models.Usuario;
@@ -23,6 +25,9 @@ import com.kukui.services.DireccionService;
 import com.kukui.services.PedidoService;
 import com.kukui.services.UsuarioService;
 
+
+@CrossOrigin(origins = "*", methods = { RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE,
+		RequestMethod.PUT })
 @RestController
 @RequestMapping("/pedidos")
 public class PedidoController {
@@ -47,18 +52,14 @@ return pedidoService.buscarPedidosPorUsuario(usuario);
 
 
 
-//@PostMapping
-//public ResponseEntity<Pedido> crearPedido(@RequestBody Pedido pedido, @RequestParam Long usuarioId, @RequestParam Long direccionId) {
-    //Usuario usuario = usuarioService.obtenerUsuarioPorId(usuarioId);
-    //Direccion direccion = direccionService.buscarDireccionById(direccionId);
-    //pedido.setUsuario(usuario);
-    //usuario.setDireccion(direccion);
-    //Pedido nuevoPedido = pedidoService.guardarPedido(pedido);
-  //}
+@PostMapping
+public ResponseEntity<Pedido> crearPedido(@RequestBody Pedido pedido, @RequestParam Long usuarioId, @RequestParam Long direccionId) {
+    Usuario usuario = usuarioService.obtenerUsuarioPorId(usuarioId);
+    Direccion direccion = direccionService.buscarDireccionById(direccionId);
+    pedido.setUsuario(usuario);
+    usuario.setDireccion(direccion);
+    Pedido nuevoPedido = pedidoService.guardarPedido(pedido);
+    return ResponseEntity.status(HttpStatus.CREATED).body(nuevoPedido);
+  }
 
-//@GetMapping("/{id}")
-//public ResponseEntity<Pedido> obtenerPedido(@PathVariable Long id) {
-  //  Pedido pedido = pedidoService.findById(id).orElseThrow(() -> new ResourceNotFoundException("Pedido no encontrado con id: " + id));
-    //return ResponseEntity.ok(pedido);
-//}
 }

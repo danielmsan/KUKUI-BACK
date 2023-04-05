@@ -13,6 +13,7 @@ public class UsuarioService {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
+    
     public Usuario agregarUsuario(Usuario usuario) {
         return usuarioRepository.save(usuario);
     }

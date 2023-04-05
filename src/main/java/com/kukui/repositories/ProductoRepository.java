@@ -2,6 +2,8 @@ package com.kukui.repositories;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
 import com.kukui.models.Producto;
 
 
@@ -9,6 +11,7 @@ import com.kukui.models.Producto;
 //Indicamos que extendemos de la interface JpaRepository y que manejamos la entidad llamada Producto identificandola por su atributo Long id. 
 
 //Usara consultas predefinidas del JPA Repository
+@Repository
 public interface ProductoRepository extends JpaRepository<Producto, Long> {
 
 	//Esta anotacion nos indica que podemos realizar una consulta personalizada a la base de datos. En este caso, obtenemos un producto por su nombre. Dicha consulta esta escrita en JPQL (Java Persistence Query Language) que es un lenguaje orientado a objetos que permite relizar consultas a bases de datos relacionales.
