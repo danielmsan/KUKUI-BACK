@@ -27,7 +27,7 @@ public class Usuario {
     private String apellido;
     
     @OneToOne
-    private Optional<Direccion> direccion;
+    private Direccion direccion;
     
 
     @Column(nullable = false, unique = true)
@@ -56,7 +56,7 @@ public class Usuario {
 		this.idUsuario = idUsuario;
 		this.nombre = nombre;
 		this.apellido = apellido;
-		this.direccion = Optional.of(direccion);
+		this.direccion = direccion;
 		this.email = email;
 		this.password = password;
 		this.encryptedPassword = encryptedPassword;
@@ -99,13 +99,11 @@ public class Usuario {
 		this.apellido = apellido;
 	}
 
-	public Optional<Direccion> getDireccion() {
+	public Direccion getDireccion() {
 		return direccion;
 	}
 
-	public void setDireccion(Optional<Direccion> direccion2) {
-		this.direccion = direccion2;
-	}
+
 
 	public String getEmail() {
 		return email;

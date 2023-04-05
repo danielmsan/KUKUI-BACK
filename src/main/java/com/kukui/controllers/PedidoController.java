@@ -47,15 +47,14 @@ return pedidoService.buscarPedidosPorUsuario(usuario);
 
 
 
-@PostMapping
-public ResponseEntity<Pedido> crearPedido(@RequestBody Pedido pedido, @RequestParam Long usuarioId, @RequestParam Long direccionId) {
-    Usuario usuario = usuarioService.obtenerUsuarioPorId(usuarioId);
-    Optional<Direccion> direccion = direccionService.buscarDireccionById(direccionId);
-    pedido.setUsuario(usuario);
-    usuario.setDireccion(direccion);
-    Pedido nuevoPedido = pedidoService.guardarPedido(pedido);
-    return ResponseEntity.ok(nuevoPedido);
-}
+//@PostMapping
+//public ResponseEntity<Pedido> crearPedido(@RequestBody Pedido pedido, @RequestParam Long usuarioId, @RequestParam Long direccionId) {
+    //Usuario usuario = usuarioService.obtenerUsuarioPorId(usuarioId);
+    //Direccion direccion = direccionService.buscarDireccionById(direccionId);
+    //pedido.setUsuario(usuario);
+    //usuario.setDireccion(direccion);
+    //Pedido nuevoPedido = pedidoService.guardarPedido(pedido);
+  //}
 
 //@GetMapping("/{id}")
 //public ResponseEntity<Pedido> obtenerPedido(@PathVariable Long id) {
