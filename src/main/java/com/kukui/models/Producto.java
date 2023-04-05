@@ -4,10 +4,12 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity 
-@Table(name = "Producto") 
+@Table(name = "producto") 
 public class Producto {
 	
 	@Id //el campo Id es la primary Key
@@ -17,10 +19,14 @@ public class Producto {
 	private Long idProducto;
 	private String nombre;
 	private String categoria;
+	@Column(columnDefinition = "TEXT", length = 1000)
 	private String descripcion;
 	private Double precio;
 	private String src_imagen;
 	private String tamanio;
+	@ManyToOne
+    @JoinColumn(name = "id_pedido")
+    private Pedido pedido;
 	
 	
 	public Producto() {

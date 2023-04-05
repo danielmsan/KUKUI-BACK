@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.008s</div>
+<div class="counter">0.007s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 <a name="contextLoads()"></a>
 <h3 class="failures">contextLoads()</h3>
 <span class="code">
-<pre>java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@2edb2f8b testClass = com.kukui.BackKukuiApplicationTests, locations = [], classes = [com.kukui.BackKukuiApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceLocations = [], propertySourceProperties = [&quot;org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true&quot;], contextCustomizers = [org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@9da1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@576f63f6, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5ef6ae06, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5d9b7a8a, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4372b9b6, org.springframework.boot.test.context.SpringBootTestAnnotation@e0613639], resourceBasePath = &quot;src/main/webapp&quot;, contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+<pre>java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@1ab53860 testClass = com.kukui.BackKukuiApplicationTests, locations = [], classes = [com.kukui.BackKukuiApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceLocations = [], propertySourceProperties = [&quot;org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true&quot;], contextCustomizers = [org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@9da1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@576f63f6, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5ef6ae06, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5d9b7a8a, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4372b9b6, org.springframework.boot.test.context.SpringBootTestAnnotation@e0613639], resourceBasePath = &quot;src/main/webapp&quot;, contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:142)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:127)
 	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191)
@@ -234,7 +234,7 @@ Caused by: org.hibernate.HibernateException: Unable to determine Dialect without
 </thead>
 <tr>
 <td class="failures">contextLoads()</td>
-<td class="failures">0.008s</td>
+<td class="failures">0.007s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -242,14 +242,14 @@ Caused by: org.hibernate.HibernateException: Unable to determine Dialect without
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>16:31:52.922 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [BackKukuiApplicationTests]: using SpringBootContextLoader
-16:31:52.932 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [com.kukui.BackKukuiApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-16:31:52.933 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.kukui.BackKukuiApplicationTests]: BackKukuiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-16:31:52.983 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [BackKukuiApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
-16:31:53.134 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [C:\Users\URIEL\Documents\Generation Mexico\PROYECTO-KUKUI\back-kukui\build\classes\java\main\com\kukui\BackKukuiApplication.class]
-16:31:53.137 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.kukui.BackKukuiApplication for test class com.kukui.BackKukuiApplicationTests
-16:31:53.404 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [BackKukuiApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
-16:31:53.407 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [BackKukuiApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+<pre>00:57:36.318 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [BackKukuiApplicationTests]: using SpringBootContextLoader
+00:57:36.327 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [com.kukui.BackKukuiApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+00:57:36.328 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.kukui.BackKukuiApplicationTests]: BackKukuiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:57:36.368 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [BackKukuiApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+00:57:36.505 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [C:\Users\URIEL\Documents\Generation Mexico\PROYECTO-KUKUI\back-kukui\build\classes\java\main\com\kukui\BackKukuiApplication.class]
+00:57:36.508 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.kukui.BackKukuiApplication for test class com.kukui.BackKukuiApplicationTests
+00:57:36.734 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [BackKukuiApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+00:57:36.736 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [BackKukuiApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -259,14 +259,14 @@ Caused by: org.hibernate.HibernateException: Unable to determine Dialect without
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.5)
 
-2023-04-04T16:31:54.049-06:00  INFO 15388 --- [    Test worker] com.kukui.BackKukuiApplicationTests      : Starting BackKukuiApplicationTests using Java 17.0.6 with PID 15388 (started by URIEL in C:\Users\URIEL\Documents\Generation Mexico\PROYECTO-KUKUI\back-kukui)
-2023-04-04T16:31:54.052-06:00  INFO 15388 --- [    Test worker] com.kukui.BackKukuiApplicationTests      : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-04-04T16:31:55.453-06:00  INFO 15388 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-04-04T16:31:55.596-06:00  INFO 15388 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 114 ms. Found 1 JPA repository interfaces.
-2023-04-04T16:31:56.468-06:00  INFO 15388 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-04-04T16:31:56.624-06:00  INFO 15388 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
-2023-04-04T16:31:57.338-06:00  INFO 15388 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-04-04T16:31:58.418-06:00 ERROR 15388 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+2023-04-05T00:57:37.291-06:00  INFO 4052 --- [    Test worker] com.kukui.BackKukuiApplicationTests      : Starting BackKukuiApplicationTests using Java 17.0.6 with PID 4052 (started by URIEL in C:\Users\URIEL\Documents\Generation Mexico\PROYECTO-KUKUI\back-kukui)
+2023-04-05T00:57:37.294-06:00  INFO 4052 --- [    Test worker] com.kukui.BackKukuiApplicationTests      : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-04-05T00:57:38.520-06:00  INFO 4052 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-05T00:57:38.647-06:00  INFO 4052 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113 ms. Found 3 JPA repository interfaces.
+2023-04-05T00:57:39.534-06:00  INFO 4052 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-05T00:57:39.664-06:00  INFO 4052 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-05T00:57:40.314-06:00  INFO 4052 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-05T00:57:41.377-06:00 ERROR 4052 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
 
 java.sql.SQLNonTransientConnectionException: Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Failed to parse the host:port pair '${{ MYSQLHOST }}:${{ MYSQLPORT }}'.
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-j-8.0.32.jar:8.0.32]
@@ -446,7 +446,7 @@ Caused by: java.lang.NumberFormatException: For input string: &quot;${{ MYSQLPOR
 	at com.mysql.cj.conf.ConnectionUrlParser.parseHostPortPair(ConnectionUrlParser.java:498) ~[mysql-connector-j-8.0.32.jar:8.0.32]
 	... 143 common frames omitted
 
-2023-04-04T16:31:58.448-06:00  WARN 15388 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+2023-04-05T00:57:41.404-06:00  WARN 4052 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
 
 java.sql.SQLNonTransientConnectionException: Cannot load connection class because of underlying exception: com.mysql.cj.exceptions.WrongArgumentException: Failed to parse the host:port pair '${{ MYSQLHOST }}:${{ MYSQLPORT }}'.
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-j-8.0.32.jar:8.0.32]
@@ -626,12 +626,12 @@ Caused by: java.lang.NumberFormatException: For input string: &quot;${{ MYSQLPOR
 	at com.mysql.cj.conf.ConnectionUrlParser.parseHostPortPair(ConnectionUrlParser.java:498) ~[mysql-connector-j-8.0.32.jar:8.0.32]
 	... 143 common frames omitted
 
-2023-04-04T16:31:58.474-06:00 ERROR 15388 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
-2023-04-04T16:31:58.477-06:00  WARN 15388 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
-2023-04-04T16:31:58.497-06:00  INFO 15388 --- [    Test worker] .s.b.a.l.ConditionEvaluationReportLogger : 
+2023-04-05T00:57:41.424-06:00 ERROR 4052 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2023-04-05T00:57:41.425-06:00  WARN 4052 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2023-04-05T00:57:41.442-06:00  INFO 4052 --- [    Test worker] .s.b.a.l.ConditionEvaluationReportLogger : 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-04-04T16:31:58.543-06:00 ERROR 15388 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
+2023-04-05T00:57:41.484-06:00 ERROR 4052 --- [    Test worker] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770) ~[spring-beans-6.0.7.jar:6.0.7]
@@ -770,9 +770,9 @@ Caused by: org.hibernate.HibernateException: Unable to determine Dialect without
 	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255) ~[hibernate-core-6.1.7.Final.jar:6.1.7.Final]
 	... 123 common frames omitted
 
-2023-04-04T16:31:58.576-06:00 ERROR 15388 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [com.kukui.BackKukuiApplicationTests@733f1395]
+2023-04-05T00:57:41.513-06:00 ERROR 4052 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] to prepare test instance [com.kukui.BackKukuiApplicationTests@7b5ac347]
 
-java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@2edb2f8b testClass = com.kukui.BackKukuiApplicationTests, locations = [], classes = [com.kukui.BackKukuiApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceLocations = [], propertySourceProperties = [&quot;org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true&quot;], contextCustomizers = [org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@9da1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@576f63f6, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5ef6ae06, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5d9b7a8a, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4372b9b6, org.springframework.boot.test.context.SpringBootTestAnnotation@e0613639], resourceBasePath = &quot;src/main/webapp&quot;, contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@1ab53860 testClass = com.kukui.BackKukuiApplicationTests, locations = [], classes = [com.kukui.BackKukuiApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceLocations = [], propertySourceProperties = [&quot;org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true&quot;], contextCustomizers = [org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@9da1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@576f63f6, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5ef6ae06, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@5d9b7a8a, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4372b9b6, org.springframework.boot.test.context.SpringBootTestAnnotation@e0613639], resourceBasePath = &quot;src/main/webapp&quot;, contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:142) ~[spring-test-6.0.7.jar:6.0.7]
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:127) ~[spring-test-6.0.7.jar:6.0.7]
 	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:191) ~[spring-test-6.0.7.jar:6.0.7]
@@ -962,7 +962,7 @@ Unconditional classes:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6.1</a> at 4 abr. 2023 16:31:58</p>
+<a href="http://www.gradle.org">Gradle 7.6.1</a> at 5 abr. 2023 00:57:41</p>
 </div>
 </div>
 </body>
