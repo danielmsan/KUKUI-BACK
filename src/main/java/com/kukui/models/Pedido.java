@@ -147,10 +147,6 @@ public class Pedido {
 
 
 
-	public void setDireccion(Direccion direccion) {
-		// TODO Auto-generated method stub
-		
-	}
 	
 	
 	

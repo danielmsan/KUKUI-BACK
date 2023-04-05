@@ -13,11 +13,11 @@ public class DireccionService {
 		direccionRepository.save(direccion);
 	}
 	
-	public Optional<Direccion> buscarDireccionById(Long idDireccion) {
-		Optional<Direccion> direccionBuscada = direccionRepository.findById(idDireccion);
+	//public Direccion buscarDireccionById(Long idDireccion) {
+		//return  direccionRepository.findById(idDireccion);
 		
-		return direccionBuscada;
-	}
+		
+	//}
 	
 
 }
