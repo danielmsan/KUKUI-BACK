@@ -144,6 +144,13 @@ public class Pedido {
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
 	}
+
+
+
+	public void setDireccion(Direccion direccion) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 	

@@ -33,9 +33,18 @@ public List<Pedido> buscarPedidosPorUsuario(Usuario usuario) {
 return pedidoRepository.findByUsuario(usuario);
 }
 
-public void guardarPedido(Pedido pedido) {
-pedidoRepository.save(pedido);
+public Pedido guardarPedido(Pedido pedido) {
+return pedidoRepository.save(pedido);
+
 }
+
+public Pedido buscarPedidoPorId(Long id) {
+	return pedidoRepository.getById(id);
+	
+	
+}
+
+
 
 
 

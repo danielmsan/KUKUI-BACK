@@ -1,6 +1,7 @@
 package com.kukui.models;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.kukui.util.PasswordUtil;
 
@@ -26,7 +27,7 @@ public class Usuario {
     private String apellido;
     
     @OneToOne
-    private Direccion direccion;
+    private Optional<Direccion> direccion;
     
 
     @Column(nullable = false, unique = true)
@@ -55,7 +56,7 @@ public class Usuario {
 		this.idUsuario = idUsuario;
 		this.nombre = nombre;
 		this.apellido = apellido;
-		this.direccion = direccion;
+		this.direccion = Optional.of(direccion);
 		this.email = email;
 		this.password = password;
 		this.encryptedPassword = encryptedPassword;
@@ -98,12 +99,12 @@ public class Usuario {
 		this.apellido = apellido;
 	}
 
-	public Direccion getDireccion() {
+	public Optional<Direccion> getDireccion() {
 		return direccion;
 	}
 
-	public void setDireccion(Direccion direccion) {
-		this.direccion = direccion;
+	public void setDireccion(Optional<Direccion> direccion2) {
+		this.direccion = direccion2;
 	}
 
 	public String getEmail() {
