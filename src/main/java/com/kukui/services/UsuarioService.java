@@ -25,5 +25,15 @@ public class UsuarioService {
     public Usuario obtenerUsuarioPorEmail(String email) {
         return usuarioRepository.findByEmail(email);
     }
+    public boolean validarContrasena(String email, String contrasena) {
+        Usuario usuario = usuarioRepository.findByEmail(email);
+        if(usuario != null) {
+            String contrasenaAlmacenada = usuario.getPassword();
+            if(contrasenaAlmacenada.equals(contrasena)) {
+                return true;
+            }
+        }
+        return false;
+    }
 
 }

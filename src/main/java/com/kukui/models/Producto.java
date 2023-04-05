@@ -1,4 +1,6 @@
 package com.kukui.models;
+import java.util.Optional;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -114,6 +116,12 @@ public class Producto {
 
 	public void setTamanio(String tamanio) {
 		this.tamanio = tamanio;
+	}
+
+
+	public void setPedido(Optional<Pedido> pedido2) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	

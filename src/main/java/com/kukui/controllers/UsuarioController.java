@@ -1,5 +1,7 @@
 package com.kukui.controllers;
 
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -37,6 +39,14 @@ public class UsuarioController {
     public ResponseEntity<Usuario> obtenerUsuarioPorEmail(@RequestParam String email) {
         Usuario usuario = usuarioService.obtenerUsuarioPorEmail(email);
         return new ResponseEntity<>(usuario, HttpStatus.OK);
+    }
+    
+    @PostMapping("/validar-contrasena")
+    public ResponseEntity<Boolean> validarContrasena(@RequestBody Map<String, Object> requestBody) {
+        String email = requestBody.get("email").toString();
+        String contrasena = requestBody.get("contrasena").toString();
+        boolean resultado = usuarioService.validarContrasena(email, contrasena);
+        return new ResponseEntity<>(resultado, HttpStatus.OK);
     }
 
 }
